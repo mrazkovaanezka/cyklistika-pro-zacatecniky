@@ -1,0 +1,101 @@
+/* --- ZÁKLAD PRO MOBILNÍ ZAŘÍZENÍ (Mobile-First) --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 15px;
+}
+
+/* Zamezení horizontálního posuvníku a zajištění plynulosti */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+header, main, footer {
+    width: 100%;
+    margin-bottom: 20px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.25rem;
+    color: #34495e;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.1rem;
+    color: #16a085;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+p, ul {
+    margin-bottom: 15px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+/* --- RESPONSIVITA PRO VĚTŠÍ OBRAZOVKY (Desktop / min-width: 768px) --- */
+@media (min-width: 768px) {
+    body {
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 30px;
+        background-color: #ecf0f1;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    /* Změna rozvržení pomocí Flexboxu pro větší obrazovky */
+    main {
+        display: flex;
+        gap: 20px;
+        background: transparent;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    section {
+        flex: 1;
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    header, footer {
+        text-align: center;
+        padding: 30px;
+    }
+}
